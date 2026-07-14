@@ -1,0 +1,20 @@
+name: Sync copilot-instructions.md to AutoReviewTest
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'integrations/github-copilot/instructions/copilot-instructions.md'
+
+jobs:
+  sync:
+    uses: CodingAggresive/AITest/.github/workflows/sync-copilot-instructions.yml@main
+    with:
+      source_repo: ${{ github.repository }}
+      source_path: integrations/github-copilot/instructions/copilot-instructions.md
+      target_repo: United-Airlines-Org/AutoReviewTest
+      target_path: .github/copilot-instructions.md
+      source_branch: main
+      target_branch: main
+    secrets: inherit
