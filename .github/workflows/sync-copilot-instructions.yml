@@ -9,7 +9,7 @@ on:
 
 jobs:
   sync:
-    uses: CodingAggresive/AITest/.github/workflows/sync-copilot-instructions.yml@main
+    uses: CodingAggresive/WorkflowTest/.github/workflows/sync-copilot-instructions.yml@main
     with:
       source_repo: ${{ github.repository }}
       source_path: integrations/github-copilot/instructions/copilot-instructions.md
