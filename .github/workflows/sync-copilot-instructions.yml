@@ -13,7 +13,7 @@ jobs:
     with:
       source_repo: ${{ github.repository }}
       source_path: integrations/github-copilot/instructions/copilot-instructions.md
-      target_repo: United-Airlines-Org/AutoReviewTest
+      target_repo: CodingAggresive/AutoReviewTest
       target_path: .github/copilot-instructions.md
       source_branch: main
       target_branch: main
